@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneakers page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>  
+    <div id="menubar" class="menubar">
+        <div class="menu_container">
+            <img id="close" src="images/icon-close.svg" alt="close" >
+        <ul>
+            <li>Collection</li>
+            <li>Men</li>
+            <li>Women</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+        </div>
+        
+    </div>
+   <main>
+
+    <header>
+        <div class="content">
+            <img id="menu" class="menu" src="./images/icon-menu.svg" alt="">
+            <img class="card_one" src="./images/logo.svg" alt="">   
+               <ul>
+                   <li>collection</li>
+                   <li>Men</li>
+                   <li>Women</li>
+                   <li>About</li>
+                   <li>Contact</li>
+               </ul>
+         </div>
+       
+       
+        <div class="user_cards">
+            <div class="image_one">
+                <img id="cart" class="cart" src="./images/icon-cart.svg" alt="cart">
+                <div id="board" class="card_board">
+                    <p class="cart_heading">cart</p>
+                    <div class="board_content">
+                        <p class="">Your cart is empty</p>
+                    </div>
+                </div>
+            </div>
+            <img class="card" src="./images/image-avatar.png" alt="">
+        </div>
+
+       
+
+    </header>
+
+
+        <div class="main_content">
+            <div class="part_one">
+              <img class="product_one" src="./images/image-product-1.jpg" alt="">
+                    <!-- <div class="next_button">
+                        <img class="previous" src="./images/icon-previous.svg" alt="">
+                        <img class="next" src="./images/icon-next.svg" alt="">
+                    </div> -->
+
+                    <div class="product">
+                        <img class="shoes" src="./images/image-product-1.jpg" alt="">
+                        <img class="shoes" src="./images/image-product-2.jpg" alt="">
+                        <img class="shoes" src="./images/image-product-3.jpg" alt="">
+                        <img class="shoes" src="./images/image-product-4.jpg" alt="">
+                    </div>
+
+            </div>
+            
+            <div class="part_two">
+             <h3><span class="Sneakers">SNEAKERS COMPANY</span></h3>
+             <h2 class="company">Fall Limited Sneakers</h2>
+
+
+                <p class="text">These low-profile sneakers are your perfect casual wear companion.Featuring a durable rubber outer sole,they'll withstand everything the weather can offer</p>
+
+                <div class="price">
+                    <div class="money">
+                        <h4>$125.00</h4>
+                        <h5>50%</h5>
+                    </div>
+
+                    <div>
+                        <h4 class="second_price">$250.00</h4>
+                    </div>
+
+                </div>
+                      
+                
+
+                <div class="icon">
+                    <div class="sneakers_icon">
+                        <img class="minus" src="./images/icon-minus.svg" alt="">
+                        <h6>3</h6>
+                        <img class="plus" src="./images/icon-plus.svg" alt="">
+                    </div>
+                        <button>
+                            <img src="./images/icon-cart.svg" alt="">
+                            <p>Add to cart</p>
+                        </button>
+                </div>
+
+
+            </div>
+
+        </div>
+
+   </main> 
+   <script>
+        const cart = document.getElementById("cart")
+        cart.addEventListener("click", ()=>{
+            const cardBoard = document.getElementById("board")
+            cardBoard.classList.toggle("active")
+        })
+        const menu = document.getElementById("menu")
+        menu.addEventListener("click", ()=>{
+            const menuBar = document.getElementById("menubar")
+            menuBar.classList.add("active")
+        })
+        const close = document.getElementById("close")
+        close.addEventListener("click", ()=>{
+            const menuBar = document.getElementById("menubar")
+            menuBar.classList.remove("active")
+        })
+   </script>
+</body>
+</html>   
